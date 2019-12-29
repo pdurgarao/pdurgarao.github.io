@@ -54,6 +54,14 @@
 .our-team-main p {
   margin-bottom: 0;
 }
+.button-toggle {
+  border:none;
+  border-color: none;
+  padding-right: 4px;
+}
+.button-toggle:active {
+  border:none;
+}
 .heading {
   /* font-size:1.5rem; */
   margin-top:140px;
@@ -190,15 +198,9 @@ font-size: 1.4rem;
 }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
-  .img-name {
-
-  }
-
+  
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
-  .img-name {
-
-  }
   
 
 }

@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         </a>
         <span class="navbar-brand mb-0 h1">AmzBakery</span>
         <!-- Responsive button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15">
+        <button class="navbar-toggler button-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- navigation List items -->
@@ -73,7 +73,46 @@
                     <h6 class="card-title product-title">family meal combo</h6>
                     <div class="price-add">
                         <p class="my-auto"><span>&#x20B9;	450</span></p>
-                        <button class="btn btn-outline-danger">Add</button>
+                        <button type ="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#selected">Add</button>
+                        <div class="modal  fade" id="selected" role="dialog"> 
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p>You're selected family meal combo</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" id="bar-progress" role="progressbar"
+                                                style="width: 30%" aria-valuenow="10" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="bar-bar">
+                                            <p>selected item</p>
+                                            <p>Enter the address</p>
+                                            <p>Order it</p>
+                                        </div>
+                                        <div class="delivery-adrs">
+                                            <form>
+                                                 <textarea type="text" name="address"
+                                                    placeholder="Enter the address"
+                                                    class="form-control"></textarea> 
+                                                    <div class="button-confirm">
+                                                        <button type="button" onclick="change()" class="btn btn-outline-danger">confirm</button>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal" onclick="initial()">Close</button>
+                                            <button type="button" class="btn btn-info"
+                                                data-dismiss="modal" onclick="initial1()">order</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +126,46 @@
                     <h6 class="card-title product-title">magic pizza box</h6>
                     <div class="price-add">
                         <p class="my-auto"><span>&#x20B9;	600</span></p>
-                        <button class="btn btn-outline-danger">Add</button>
+                        <button type ="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#selected1">Add</button>
+                        <div class="modal  fade" id="selected1" role="dialog"> 
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p>You're selected family meal combo</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" id="bar-progress" role="progressbar"
+                                                style="width: 30%" aria-valuenow="10" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="bar-bar">
+                                            <p>selected item</p>
+                                            <p>Enter the address</p>
+                                            <p>Order it</p>
+                                        </div>
+                                        <div class="delivery-adrs">
+                                            <form>
+                                                 <textarea type="text" name="address"
+                                                    placeholder="Enter the address"
+                                                    class="form-control"></textarea> 
+                                                    <div class="button-confirm">
+                                                        <button type="button" onclick="change()" class="btn btn-outline-danger">confirm</button>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal" onclick="initial()">Close</button>
+                                            <button type="button" class="btn btn-info"
+                                                data-dismiss="modal" onclick="initial1()">order</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,7 +179,46 @@
                     <h6 class="card-title product-title">butterscotch cookies</h6>
                     <div class="price-add">
                         <p class="my-auto"><span>&#x20B9;	550</span></p>
-                        <button class="btn btn-outline-danger">Add</button>
+                        <button type ="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#selected2">Add</button>
+                        <div class="modal  fade" id="selected2" role="dialog"> 
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p>You're selected family meal combo</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" id="bar-progress" role="progressbar"
+                                                style="width: 30%" aria-valuenow="10" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="bar-bar">
+                                            <p>selected item</p>
+                                            <p>Enter the address</p>
+                                            <p>Order it</p>
+                                        </div>
+                                        <div class="delivery-adrs">
+                                            <form>
+                                                 <textarea type="text" name="address"
+                                                    placeholder="Enter the address"
+                                                    class="form-control"></textarea> 
+                                                    <div class="button-confirm">
+                                                        <button type="button" onclick="change()" class="btn btn-outline-danger">confirm</button>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal" onclick="initial()">Close</button>
+                                            <button type="button" class="btn btn-info"
+                                                data-dismiss="modal" onclick="initial1()">order</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,7 +232,47 @@
                     <h6 class="card-title product-title">fruit cake</h6>
                     <div class="price-add">
                         <p class="my-auto"><span>&#x20B9;	500</span></p>
-                        <button class="btn btn-outline-danger">Add</button>
+                        <button type ="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#selected3">Add</button>
+                        <div class="modal  fade" id="selected3" role="dialog"> 
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p>You're selected family meal combo</p>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" id="bar-progress" role="progressbar"
+                                                style="width: 30%" aria-valuenow="10" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="bar-bar">
+                                            <p>selected item</p>
+                                            <p>Enter the address</p>
+                                            <p>Order it</p>
+                                        </div>
+                                        <div class="delivery-adrs">
+                                            <form>
+                                                 <textarea type="text" name="address"
+                                                    placeholder="Enter the address"
+                                                    class="form-control"></textarea> 
+                                                    <div class="button-confirm">
+                                                        <button type="button" onclick="change()" class="btn btn-outline-danger">confirm</button>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal" onclick="initial()">Close</button>
+                                            <button type="button" class="btn btn-info"
+                                                data-dismiss="modal" onclick="initial1()">order</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#selected3">Add</button> -->
                     </div>
                 </div>
             </div>

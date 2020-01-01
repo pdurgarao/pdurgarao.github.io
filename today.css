@@ -61,6 +61,12 @@
   background:#dc3545;
   color:white;
 }
+.drop-active:active {
+  background-color:#dc3545 ;
+}
+.nav-menus {
+  margin-left:7px!important;
+}
 .button-toggle {
   border:none;
   border-color: none;

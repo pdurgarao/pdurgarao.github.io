@@ -72,6 +72,17 @@
   border-color: none;
   
 }
+.button-close{
+  outline:0!important;
+}
+.toggle-button {
+  outline: 0!important;
+  
+}
+.toggle-button:active{
+  background:#dc3545;
+
+}
 .button-confirm {
   margin:20px 0 10px 0;
 }

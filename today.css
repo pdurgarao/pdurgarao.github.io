@@ -137,6 +137,9 @@
 .text-home2 {
   margin-top:40px;
 }
+.img-padding {
+  padding-bottom: 30px;
+}
 
 @media (max-width: 575.98px){
   .brand-size{

@@ -1,3 +1,16 @@
+/* html,
+body {
+   margin:0!important;
+   padding:0!important;
+   height:100%!important;
+}
+.footer {
+  position:absolute!important;
+  bottom:0!important;
+  width:100%!important;
+  height:60px;   
+  background:#6cf; 
+} */
 .our-team-main {
   width: 100%;
   height: auto;
@@ -18,10 +31,10 @@
   width: 90px;
 }
 
-.our-team-main h3 {
+/* .our-team-main h3 {
   font-size: 20px;
   font-weight: 700;
-}
+} */
 
 .our-team-main p {
   margin-bottom: 0;
@@ -46,10 +59,10 @@
   width: 90px;
 }
 
-.our-team-main h3 {
+/* .our-team-main h3 {
   font-size: 20px;
   font-weight: 700;
-}
+} */
 
 .our-team-main p {
   margin-bottom: 0;
@@ -82,6 +95,19 @@
   outline: 0!important;
   
 }
+/* .example {
+  animation-name:example;
+  animation-duration: 3s;
+  animation-iteration-count:infinite ;
+
+}
+@keyframes example {
+  0% {left: -100%;}
+  50%{left:100%}
+   75% {left: -50%;} 
+  100%{left:-100%}
+} */
+
 .toggle-button:active{
   background:#dc3545;
 
@@ -245,11 +271,23 @@ font-size: 1.4rem;
 }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
+  .team-name{
+    font-size:1.9rem!important;
+  }
+  .role {
+    font-size: 1.5rem;
+  }
+  .text-para {
+    font-size:1.2rem;
+  }
   .card-width {
     margin-bottom: auto;
   }
   .card-width1 {
     margin-bottom: auto;
+  }
+  .footer {
+    margin-top:301px!important;
   }
 
 }

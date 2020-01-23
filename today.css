@@ -101,7 +101,7 @@ body {
   transform:rotate(600deg);
   /* transform: scale(0.5); */
 }
- /* .example {
+  /* .example {
   animation-name:example;
   animation-duration: 3s;
   animation-iteration-count:infinite ;
@@ -112,7 +112,7 @@ body {
   50%{left:100%}
    75% {left: -50%;} 
   100%{left:-100%}
-}  */
+}   */
 
 .toggle-button:active{
   background:#dc3545;
@@ -175,7 +175,15 @@ body {
 .icon {
   margin-top:-28px!important;
 }
+
+
 @media (max-width: 575.98px){
+  /* .product-img{
+    transition: 200s linear;
+  } 
+  .product-img:hover {
+    
+  } */
   .brand-size{
     font-size: 1.6rem;
   }
@@ -381,16 +389,6 @@ font-size: 1.4rem;
   
 
 }
-/* #navbarSupportedContent15 {
-animation-name: sideMenuOpenClose;
-  transition: 2s; 
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes sideMenuOpenClose {
-  from{left:-200%;}
-  to{left:0%;}
-} */
 .nav-list-side {
  margin-left: 10px;
  font-size: 1.5rem;

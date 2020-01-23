@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
   <link rel="stylesheet" href="today.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" /> -->
   <script src="main.js"></script>
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
@@ -18,11 +19,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
  
 </head>
-
 <body>
-  <!-- <div>
-    <button class="btn" type="button">Menu</button>
-  </div> -->
+   
    <!-- <div class="d-block d-sm-none nav-side">
     <div id="nav-menu" class="sideMenu">
       <button id="sideNavCloseBtnBtn" class="close-btn">&times</button>
@@ -41,7 +39,16 @@
         data-target="#navbarSupportedContent15">
         <span class="navbar-toggler-icon" id="sideNavOpenBtn"></span>
       </button>
-      <!-- <button type="button" class="btn btn-danger d-block d-sm-none" id="sideNavOpenBtn">Menu</button>  -->
+
+      <!-- <div >
+        <button class="btn" type="button" onclick="toggleBtn()">Menu</button>
+        <ul class="menuResponsiveList d-none" id="menuResponsiveListItems">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>  -->
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent15">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -276,7 +283,7 @@
 
     <div class="container">
       <div class="row my-auto">
-        <div class="col-xs-6 col-lg-3 mt-3">
+        <div class="col-xs-6 col-lg-3 mt-3 product-img">
           <div class="card h-100">
             <img src="download (2).jpg" class="img-fluid" id="card-image">
             <div class="card-body">
@@ -286,7 +293,7 @@
           </div>
         </div>
 
-        <div class="col-xs-6 col-lg-3 mt-3">
+        <div class="col-xs-6 col-lg-3 mt-3 product-img">
           <div class="card h-100">
             <img src="burger.jpg" class="img-fluid">
             <div class="card-body">
@@ -296,7 +303,7 @@
           </div>
         </div>
 
-        <div class="col-xs-6 col-lg-3 mt-3">
+        <div class="col-xs-6 col-lg-3 mt-3 product-img">
           <div class="card h-100">
             <img src="thumb.jpg" class="img-fluid">
             <div class="card-body">
@@ -305,7 +312,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-lg-3 mt-3">
+        <div class="col-xs-6 col-lg-3 mt-3 product-img">
           <div class="card h-100">
             <img src="shakes.jpg" class="img-fluid" id="card-image">
             <div class="card-body">
@@ -316,8 +323,6 @@
         </div>
       </div>
     </div>
-
-
   </main>
   </div>
   <footer class="page-footer font-small unique-color-dark footer" style="margin-top:160px;background-color: #4a07ff14;">
@@ -385,19 +390,19 @@
 
   </footer>
 
-  <script>
+  <!-- <script>
     document.getElementById("sideNavCloseBtnBtn").addEventListener("click", close);
      function close() {
       document.getElementById("nav-menu").style.display="none";
-    //  console.log("it's working")
+      console.log("it's working")
      }
      document.getElementById("sideNavOpenBtn").addEventListener("click", open);
      function open() {
       document.getElementById("nav-menu").style.display="none";
-    //  console.log("it's working")
+     console.log("it's working")
      }
      
-   </script>   
+   </script>    -->
   
 
 </body>
